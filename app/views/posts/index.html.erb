@@ -1,1 +1,3 @@
-hi i'm here too
+<% @posts.each do |post| %>
+  <%= link_to post.title, post_path(post) %>
+<% end %>
